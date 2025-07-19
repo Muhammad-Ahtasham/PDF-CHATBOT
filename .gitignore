@@ -2,3 +2,8 @@ node_modules
 .env
 Sample.pdf
 Sample.pdf.txt
+
+
+index.js
+package.json
+package-lock.json
