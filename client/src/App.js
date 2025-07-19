@@ -32,10 +32,10 @@ function App() {
     const formData = new FormData();
     formData.append("pdf", pdf);
     try {
-      // const res = await fetch(
-      //   "https://pdf-q-a-learning-project-1.onrender.com/upload",
-      //   {
-      const res = await fetch("http://localhost:3001/upload", {
+      const res = await fetch(
+        "https://pdf-q-a-learning-project-1.onrender.com/upload",
+        {
+      // const res = await fetch("http://localhost:3001/upload", {
         method: "POST",
         body: formData,
       });
@@ -58,10 +58,10 @@ function App() {
     setChat((prev) => [...prev, userMsg]);
     setQuestion("");
     try {
-      // const res = await fetch(
-      //   "https://pdf-q-a-learning-project-1.onrender.com/ask",
-      //   {
-      const res = await fetch("http://localhost:3001/ask", {
+      const res = await fetch(
+        "https://pdf-q-a-learning-project-1.onrender.com/ask",
+        {
+      // const res = await fetch("http://localhost:3001/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question }),
